@@ -8,5 +8,6 @@
     <string name="retry">RETRY</string>
     <string name="filter">Filter</string>
     <string name="games">Games</string>
+    <string name="league_icon">league icon</string>
 
 </resources>

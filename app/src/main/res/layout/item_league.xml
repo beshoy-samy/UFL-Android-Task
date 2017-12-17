@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/leagues_recycler_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/item_league"
+        android:padding="@dimen/item_legue_padding"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:layout_width="@dimen/league_icon_width"
+            android:layout_height="@dimen/league_icon_height"
+            android:id="@+id/league_icon"
+            android:contentDescription="@string/league_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Gray"
+            android:gravity="center"
+            android:id="@+id/league_name"
+            android:textSize="@dimen/league_name_text_size"/>
+    </LinearLayout>
+
+</FrameLayout>

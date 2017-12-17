@@ -18,7 +18,7 @@ public class GlideUtil {
     public static void loadImageURL(Context mContext, String imageURL, ImageView imageView){
         GlideApp.with(mContext)
                 .load(imageURL)
-                .placeholder(R.color.image_placeholder)
+                //.placeholder(R.color.image_placeholder)
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(imageView);

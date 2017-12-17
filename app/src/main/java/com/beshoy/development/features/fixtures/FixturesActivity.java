@@ -1,26 +1,39 @@
 package com.beshoy.development.features.fixtures;
 
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import com.beshoy.development.R;
+import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.features.base.BaseActivity;
+import com.beshoy.development.features.fixtures.adapters.LeaguesAdapter;
+import com.beshoy.development.features.fixtures.adapters.listeners.LeagueClickListener;
 import com.beshoy.development.injection.component.ActivityComponent;
+
+import java.util.ArrayList;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
+import timber.log.Timber;
 
-public class FixturesActivity extends BaseActivity implements FixturesView{
+public class FixturesActivity extends BaseActivity implements FixturesView, LeagueClickListener{
 
     @Inject
     FixturesPresenter presenter;
+    @Inject
+    LeaguesAdapter leaguesAdapter;
 
     @BindView(R.id.leaguesRecyclerView)
     RecyclerView leaguesRecycler;
+    @BindView(R.id.progress)
+    ProgressBar progress;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -43,6 +56,10 @@ public class FixturesActivity extends BaseActivity implements FixturesView{
     protected void initViews(Bundle savedInstanceState) {
         toolbar.setTitle(R.string.games);
         setupToolbar(toolbar, false);
+        leaguesRecycler.setLayoutManager(new LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL, false));
+        leaguesAdapter.setListener(this);
+        leaguesRecycler.setAdapter(leaguesAdapter);
         presenter.getFixtures();
     }
 
@@ -62,4 +79,18 @@ public class FixturesActivity extends BaseActivity implements FixturesView{
         presenter.detachView();
     }
 
+    @Override
+    public void showProgress(boolean show) {
+        progress.setVisibility(show ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
+    public void leaguesLoaded(ArrayList<League> leagues) {
+        leaguesAdapter.setLeagues(leagues);
+    }
+
+    @Override
+    public void onLeagueClicked(League league) {
+        Timber.d("league clicked "+league.getName());
+    }
 }

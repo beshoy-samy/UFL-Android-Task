@@ -41,16 +41,6 @@
         "id": 6,
         "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/Dutch%20contest%202.png?alt=media&token=4aaa60c0-6e1a-4c99-bb2e-337ee6437773",
         "name":"DUTCH LEAGUE"
-      },
-      {
-        "id": 7,
-        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/mls%20contest.png?alt=media&token=346ff368-d6b7-4337-8336-5c111f3e786b",
-        "name":"MLS LEAGUE"
-      },
-      {
-        "id": 8,
-        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/saudi%20contest.png?alt=media&token=afae6f8d-143b-49c3-a720-e429b3e183a9",
-        "name":"SAUDI LEAGUE"
       }
     ]
   }

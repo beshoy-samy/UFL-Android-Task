@@ -38,7 +38,8 @@ public class FixturesPresenter extends BasePresenter<FixturesView>{
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(result -> {
-                Timber.d("success :: loading leagues");
+                view.leaguesLoaded(result);
+                view.showProgress(false);
             }, e ->{
                 Timber.e("failed :: "+e.getMessage());
             }));
