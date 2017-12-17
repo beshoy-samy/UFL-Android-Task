@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "response": {
+    "items":[
+      {
+        "id": -1,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/silver-icon.png?alt=media&token=a62e06d1-71a1-4c2d-b7dd-38ad3ddd6ffb",
+        "name":"ALL LEAGUES"
+      },
+      {
+        "id": 0,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/champions-league-icon.png?alt=media&token=b57b5be2-ac45-4733-ab64-24ea223cd346",
+        "name":"CHAMPIONS LEAGUE"
+      },
+      {
+        "id": 1,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/Europa%20Contest.png?alt=media&token=052f7f8c-5e84-4319-bead-f23d544c9b29",
+        "name":"EUROPA LEAGUE"
+      },
+      {
+        "id": 2,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "name":"PREMIER LEAGUE"
+      },
+      {
+        "id": 3,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/Spain%20Contest%20Badge.png?alt=media&token=13846290-57bc-4a3b-b5e5-ef3416b5bc87",
+        "name":"LA LIGA"
+      },
+      {
+        "id": 4,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/France%20Contest.png?alt=media&token=cf5c420a-b4a0-4969-83bf-54b91b411f89",
+        "name":"LEAGUE 1"
+      },
+      {
+        "id": 5,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/Italy%20Badge.png?alt=media&token=a1296ad3-4006-4c06-a15e-0e53571a4dfd",
+        "name":"SERIE A"
+      },
+      {
+        "id": 6,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/Dutch%20contest%202.png?alt=media&token=4aaa60c0-6e1a-4c99-bb2e-337ee6437773",
+        "name":"DUTCH LEAGUE"
+      },
+      {
+        "id": 7,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/mls%20contest.png?alt=media&token=346ff368-d6b7-4337-8336-5c111f3e786b",
+        "name":"MLS LEAGUE"
+      },
+      {
+        "id": 8,
+        "image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/saudi%20contest.png?alt=media&token=afae6f8d-143b-49c3-a720-e429b3e183a9",
+        "name":"SAUDI LEAGUE"
+      }
+    ]
+  }
+}

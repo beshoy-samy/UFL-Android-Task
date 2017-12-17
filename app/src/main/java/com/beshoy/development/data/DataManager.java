@@ -5,8 +5,10 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import com.beshoy.development.Constants;
-import com.beshoy.development.data.model.response.Result;
+import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.data.remote.UFLService;
+
+import java.util.ArrayList;
 
 import io.reactivex.Observable;
 
@@ -24,8 +26,8 @@ public class DataManager {
         this.uflService = uflService;
     }
 
-    public Observable<Result> getFixtures(){
-        return uflService.getFixtures(Constants.MOCK_FIXTURES_FILE);
+    public Observable<ArrayList<League>> getSupportedLeagues(){
+        return uflService.getLeagues(Constants.MOCK_LEAGUES_FILE);
     }
 
 }

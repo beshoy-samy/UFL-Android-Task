@@ -6,5 +6,7 @@
     <string name="no_connection">No Internet found. Check your connection or try again.</string>
     <string name="oh_no">Oh no!</string>
     <string name="retry">RETRY</string>
+    <string name="filter">Filter</string>
+    <string name="games">Games</string>
 
 </resources>

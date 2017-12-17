@@ -7,5 +7,5 @@ public interface Constants {
 
     String PREF_FILE_NAME = "ufl_prefs";
 
-    int MOCK_FIXTURES_FILE = 1;
+    String MOCK_LEAGUES_FILE = "leagues";
 }

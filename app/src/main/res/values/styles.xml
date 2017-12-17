@@ -13,13 +13,13 @@
     </style>
 
 
-    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorControlHighlight">@color/LightGray</item>
         <item name="android:textColorHint">@color/TransparentGray</item>
         <item name="android:editTextColor">@color/TransparentGray</item>
     </style>
 
-    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:textColorSecondary">@android:color/white</item>
         <item name="actionMenuTextColor">@android:color/white</item>

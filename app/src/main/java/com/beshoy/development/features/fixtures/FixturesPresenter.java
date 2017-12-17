@@ -1,6 +1,9 @@
 package com.beshoy.development.features.fixtures;
 
+import android.view.MenuItem;
+
 import com.beshoy.development.Constants;
+import com.beshoy.development.R;
 import com.beshoy.development.data.DataManager;
 import com.beshoy.development.features.base.BasePresenter;
 
@@ -31,13 +34,19 @@ public class FixturesPresenter extends BasePresenter<FixturesView>{
     }
 
     public void getFixtures() {
-        addDisposable(dataManager.getFixtures()
+        addDisposable(dataManager.getSupportedLeagues()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(result -> {
-                Timber.d("success :: "+result.getResponse());
+                Timber.d("success :: loading leagues");
             }, e ->{
                 Timber.e("failed :: "+e.getMessage());
             }));
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_filter)
+            return true;
+        return false;
     }
 }
