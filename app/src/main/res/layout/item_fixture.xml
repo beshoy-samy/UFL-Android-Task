@@ -68,7 +68,8 @@
             android:padding="@dimen/padding_8">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
                 android:layout_height="match_parent"
                 android:id="@+id/team2_name"
                 android:textColor="@color/white"
@@ -78,10 +79,12 @@
                 android:layout_marginEnd="@dimen/margin_8"/>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/team_icon"
-                android:id="@+id/team2_img"/>
+                android:id="@+id/team2_img"
+                android:layout_gravity="end"/>
 
         </LinearLayout>
 
