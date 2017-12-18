@@ -5,7 +5,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import com.beshoy.development.Constants;
-import com.beshoy.development.data.model.response.fixtures.FixturesResponse;
+import com.beshoy.development.data.model.response.fixtures.Fixture;
 import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.data.remote.UFLService;
 
@@ -31,7 +31,7 @@ public class DataManager {
         return uflService.getLeagues(Constants.MOCK_LEAGUES_FILE);
     }
 
-    public Observable<FixturesResponse> getFixtures(String leagueId){
+    public Observable<ArrayList<Fixture>> getFixtures(String leagueId){
         return uflService.getFixtures(leagueId);
     }
 

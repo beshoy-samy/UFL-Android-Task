@@ -43,7 +43,6 @@ public class FixturesPresenter extends BasePresenter<FixturesView>{
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(result -> {
                 view.leaguesLoaded(result);
-                view.showProgress(false);
             }, e -> {
                 view.showProgress(false);
                 view.showErrorView(true);
@@ -58,10 +57,6 @@ public class FixturesPresenter extends BasePresenter<FixturesView>{
     }
 
     public void onLeagueClicked(String leagueId) {
-        if(leagueId.equals(Constants.ALL_LEAGUES_ID))
-            view.setIsAllLeagues(true);
-        else
-            view.setIsAllLeagues(false);
         view.showErrorView(false);
         view.showProgress(true);
         wasALeagueRequest = false;
@@ -69,11 +64,13 @@ public class FixturesPresenter extends BasePresenter<FixturesView>{
         addDisposable(dataManager.getFixtures(leagueId)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(fixturesResponse -> {
-                    view.fixturesLoaded(fixturesResponse);
+                .subscribe(fixtures -> {
+                    view.fixturesLoaded(fixtures);
+                    view.showFixturesRecycler(true);
                     view.showProgress(false);
                 }, e -> {
                     view.showProgress(false);
+                    view.showFixturesRecycler(false);
                     view.showErrorView(true);
                     Timber.e("FAILED :: "+e.getMessage());
                 }));

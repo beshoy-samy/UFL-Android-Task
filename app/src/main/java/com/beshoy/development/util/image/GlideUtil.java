@@ -27,7 +27,6 @@ public class GlideUtil {
         GlideApp.with(mContext)
                 .load(imageURL)
                 .circleCrop()
-                .placeholder(R.color.image_placeholder)
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(imageView);

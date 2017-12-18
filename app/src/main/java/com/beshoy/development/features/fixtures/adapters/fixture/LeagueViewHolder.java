@@ -28,7 +28,7 @@ public class LeagueViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void onBind(String leagueImg, String leagueName){
-        GlideUtil.loadCircleImage(leagueIcon.getContext(), leagueImg, leagueIcon);
+        GlideUtil.loadImageURL(leagueIcon.getContext(), leagueImg, leagueIcon);
         this.leagueName.setText(leagueName);
     }
 }

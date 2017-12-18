@@ -1,7 +1,7 @@
 package com.beshoy.development.data.remote;
 
 
-import com.beshoy.development.data.model.response.fixtures.FixturesResponse;
+import com.beshoy.development.data.model.response.fixtures.Fixture;
 import com.beshoy.development.data.model.response.leagues.League;
 
 import java.util.ArrayList;
@@ -17,6 +17,6 @@ public interface UFLService {
     Observable<ArrayList<League>> getLeagues(@Path("file") String file);
 
     @GET("api/v1/fixtures/{leagueId}")
-    Observable<FixturesResponse> getFixtures(@Path("leagueId") String leagueId);
+    Observable<ArrayList<Fixture>> getFixtures(@Path("leagueId") String leagueId);
 
 }

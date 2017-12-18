@@ -1,4 +1,3 @@
-
 package com.beshoy.development.data.model.response.fixtures;
 
 import com.google.gson.annotations.Expose;
@@ -36,6 +35,9 @@ public class Fixture {
     @SerializedName("team2_name")
     @Expose
     private String team2Name;
+    @SerializedName("viewType")
+    @Expose
+    private int viewType;
 
     public String getLeagueImage() {
         return leagueImage;
@@ -115,6 +117,14 @@ public class Fixture {
 
     public void setTeam2Name(String team2Name) {
         this.team2Name = team2Name;
+    }
+
+    public int getViewType() {
+        return viewType;
+    }
+
+    public void setViewType(int viewType) {
+        this.viewType = viewType;
     }
 
 }

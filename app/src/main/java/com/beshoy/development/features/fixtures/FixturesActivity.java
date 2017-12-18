@@ -11,7 +11,6 @@ import android.widget.ProgressBar;
 
 import com.beshoy.development.R;
 import com.beshoy.development.data.model.response.fixtures.Fixture;
-import com.beshoy.development.data.model.response.fixtures.FixturesResponse;
 import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.features.base.BaseActivity;
 import com.beshoy.development.features.fixtures.adapters.fixture.FixturesAdapter;
@@ -20,7 +19,6 @@ import com.beshoy.development.features.fixtures.adapters.league.LeagueClickListe
 import com.beshoy.development.injection.component.ActivityComponent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.inject.Inject;
 
@@ -72,7 +70,7 @@ public class FixturesActivity extends BaseActivity implements FixturesView,
         leaguesRecycler.setAdapter(leaguesAdapter);
         fixturesRecycler.setLayoutManager(new LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL, false));
-
+        fixturesRecycler.setAdapter(fixturesAdapter);
         presenter.getLeagues();
     }
 
@@ -103,21 +101,18 @@ public class FixturesActivity extends BaseActivity implements FixturesView,
     }
 
     @Override
+    public void showFixturesRecycler(boolean show) {
+        fixturesRecycler.setVisibility(show ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
     public void leaguesLoaded(ArrayList<League> leagues) {
         leaguesAdapter.setLeagues(leagues);
     }
 
     @Override
-    public void fixturesLoaded(FixturesResponse fixturesResponse) {
-        fixturesAdapter.setCount(fixturesResponse.getSize());
-        fixturesAdapter.setFixtures(fixturesResponse.getFixtures());
-        fixturesRecycler.setAdapter(fixturesAdapter);
-        fixturesAdapter.notifyDataSetChanged();
-    }
-
-    @Override
-    public void setIsAllLeagues(boolean isAllLeagues) {
-        fixturesAdapter.setIsAllLeagues(isAllLeagues);
+    public void fixturesLoaded(ArrayList<Fixture> fixtures) {
+        fixturesAdapter.setFixtures(fixtures);
     }
 
     @Override
