@@ -3,11 +3,12 @@
     <string name="app_name">UFL Task</string>
 
     <!-- Error View -->
-    <string name="no_connection">No Internet found. Check your connection or try again.</string>
+    <string name="no_connection">No Internet found. Check your connection and try again.</string>
     <string name="oh_no">Oh no!</string>
     <string name="retry">RETRY</string>
     <string name="filter">Filter</string>
     <string name="games">Games</string>
     <string name="league_icon">league icon</string>
+    <string name="team_icon">team icon</string>
 
 </resources>

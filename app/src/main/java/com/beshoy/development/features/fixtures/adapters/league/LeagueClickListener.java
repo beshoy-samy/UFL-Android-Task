@@ -1,4 +1,4 @@
-package com.beshoy.development.features.fixtures.adapters.listeners;
+package com.beshoy.development.features.fixtures.adapters.league;
 
 import com.beshoy.development.data.model.response.leagues.League;
 

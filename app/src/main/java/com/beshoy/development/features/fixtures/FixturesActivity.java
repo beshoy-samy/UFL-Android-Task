@@ -10,28 +10,38 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 import com.beshoy.development.R;
+import com.beshoy.development.data.model.response.fixtures.Fixture;
+import com.beshoy.development.data.model.response.fixtures.FixturesResponse;
 import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.features.base.BaseActivity;
-import com.beshoy.development.features.fixtures.adapters.LeaguesAdapter;
-import com.beshoy.development.features.fixtures.adapters.listeners.LeagueClickListener;
+import com.beshoy.development.features.fixtures.adapters.fixture.FixturesAdapter;
+import com.beshoy.development.features.fixtures.adapters.league.LeaguesAdapter;
+import com.beshoy.development.features.fixtures.adapters.league.LeagueClickListener;
 import com.beshoy.development.injection.component.ActivityComponent;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
-import timber.log.Timber;
+import butterknife.OnClick;
 
-public class FixturesActivity extends BaseActivity implements FixturesView, LeagueClickListener{
+public class FixturesActivity extends BaseActivity implements FixturesView,
+        LeagueClickListener{
 
     @Inject
     FixturesPresenter presenter;
     @Inject
     LeaguesAdapter leaguesAdapter;
-
+    @Inject
+    FixturesAdapter fixturesAdapter;
     @BindView(R.id.leaguesRecyclerView)
     RecyclerView leaguesRecycler;
+    @BindView(R.id.fixturesRecyclerView)
+    RecyclerView fixturesRecycler;
+    @BindView(R.id.error_view)
+    View errorView;
     @BindView(R.id.progress)
     ProgressBar progress;
     @BindView(R.id.toolbar)
@@ -60,7 +70,10 @@ public class FixturesActivity extends BaseActivity implements FixturesView, Leag
                 LinearLayoutManager.HORIZONTAL, false));
         leaguesAdapter.setListener(this);
         leaguesRecycler.setAdapter(leaguesAdapter);
-        presenter.getFixtures();
+        fixturesRecycler.setLayoutManager(new LinearLayoutManager(this,
+                LinearLayoutManager.VERTICAL, false));
+
+        presenter.getLeagues();
     }
 
     @Override
@@ -85,12 +98,35 @@ public class FixturesActivity extends BaseActivity implements FixturesView, Leag
     }
 
     @Override
+    public void showErrorView(boolean show) {
+        errorView.setVisibility(show ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
     public void leaguesLoaded(ArrayList<League> leagues) {
         leaguesAdapter.setLeagues(leagues);
     }
 
     @Override
+    public void fixturesLoaded(FixturesResponse fixturesResponse) {
+        fixturesAdapter.setCount(fixturesResponse.getSize());
+        fixturesAdapter.setFixtures(fixturesResponse.getFixtures());
+        fixturesRecycler.setAdapter(fixturesAdapter);
+        fixturesAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void setIsAllLeagues(boolean isAllLeagues) {
+        fixturesAdapter.setIsAllLeagues(isAllLeagues);
+    }
+
+    @Override
     public void onLeagueClicked(League league) {
-        Timber.d("league clicked "+league.getName());
+        presenter.onLeagueClicked(league.getId());
+    }
+
+    @OnClick(R.id.retry)
+    void onRetry(){
+        presenter.retry();
     }
 }

@@ -7,7 +7,7 @@
 
     <color name="white">#fff</color>
     <color name="black">#000</color>
-    <color name="blue">#2196F3</color>
+    <color name="blue">#03A9F4</color>
 
     <color name="image_placeholder">#d0d0d0</color>
 
@@ -17,4 +17,12 @@
 
     <color name="activity_fixtures_bg">#0c2541</color>
     <color name="leagues_recycler_bg">#033055</color>
+    <color name="item_fixture_bg">#032b38</color>
+    <color name="error_view_textColor">@color/Gray</color>
+    <color name="result_or_time">#0e3542</color>
+
+    <color name="bronze">#CD7F32</color>
+    <color name="silver">@color/Gray</color>
+    <color name="gold">#FFDF00</color>
+
 </resources>

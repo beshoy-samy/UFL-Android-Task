@@ -1,5 +1,6 @@
 package com.beshoy.development.features.fixtures;
 
+import com.beshoy.development.data.model.response.fixtures.FixturesResponse;
 import com.beshoy.development.data.model.response.leagues.League;
 import com.beshoy.development.features.base.MvpView;
 
@@ -11,6 +12,9 @@ import java.util.ArrayList;
 
 public interface FixturesView extends MvpView {
     void showProgress(boolean show);
+    void showErrorView(boolean show);
 
     void leaguesLoaded(ArrayList<League> leagues);
+    void fixturesLoaded(FixturesResponse fixturesResponse);
+    void setIsAllLeagues(boolean isAllLeagues);
 }

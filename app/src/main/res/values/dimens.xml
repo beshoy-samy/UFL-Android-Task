@@ -9,5 +9,10 @@
     <dimen name="league_name_text_size">12sp</dimen>
     <dimen name="league_icon_width">48dp</dimen>
     <dimen name="league_icon_height">48dp</dimen>
+    <dimen name="fixture_league_icon_width">32dp</dimen>
+    <dimen name="fixture_league_icon_height">32dp</dimen>
+    <dimen name="fixture_coins_width">4dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="team_name_text_size">12sp</dimen>
 
 </resources>

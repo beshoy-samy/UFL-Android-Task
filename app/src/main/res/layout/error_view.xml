@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:text="@string/oh_no"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/error_view_textColor"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         android:text="@string/no_connection"
         android:textAlignment="center"
+        android:textColor="@color/error_view_textColor"
         android:layout_marginTop="@dimen/margin_8"/>
 
     <Button
@@ -28,6 +30,7 @@
         android:text="@string/retry"
         android:background="@drawable/btn_retry"
         android:layout_gravity="center"
-        android:id="@+id/retry"/>
+        android:id="@+id/retry"
+        android:textColor="@color/error_view_textColor"/>
 
 </LinearLayout>

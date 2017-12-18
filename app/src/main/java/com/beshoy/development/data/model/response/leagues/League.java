@@ -8,7 +8,7 @@ public class League {
 
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private String id;
     @SerializedName("image")
     @Expose
     private String image;
@@ -16,11 +16,11 @@ public class League {
     @Expose
     private String name;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -1,0 +1,140 @@
+{
+  "status": 200,
+  "response": {
+    "size":16,
+    "fixtures":[
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 100,
+        "date": "TODAY",
+        "on_air":"",
+        "result":"2-0",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fliverpool.png?alt=media&token=3ff90420-c2d9-43ce-ad0f-73c55d6edada",
+        "team1_name":"Liverpool",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fwatford.png?alt=media&token=d919dd06-ae99-4128-b82b-5056d70e9440",
+        "team2_name":"Watford"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 200,
+        "date": "TODAY",
+        "on_air":"",
+        "result":"1-2",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmu.png?alt=media&token=06ac1667-2cb1-40e7-a3df-ad41ae11623e",
+        "team1_name":"Man Utd",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmc.png?alt=media&token=ecd2bead-1130-4d36-bdee-22591ac4ebe6",
+        "team2_name":"Man City"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 200,
+        "date": "TODAY",
+        "on_air":"14:30",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Feverton.png?alt=media&token=51e369f2-8057-46fa-ac6c-a3444348529c",
+        "team1_name":"Everton",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fchelsea.png?alt=media&token=6f06568f-cd12-4355-9271-71afecedded8",
+        "team2_name":"Chelsea"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 0,
+        "date": "TUESDAY 19 DECEMBER",
+        "on_air":"22:00",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fleicester.png?alt=media&token=1fc3580c-c8a9-4f99-a818-f742d9b655a9",
+        "team1_name":"Leicester",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fwatford.png?alt=media&token=d919dd06-ae99-4128-b82b-5056d70e9440",
+        "team2_name":"Watford"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 100,
+        "date": "TUESDAY 19 DECEMBER",
+        "on_air":"17:00",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Farsenal.png?alt=media&token=2da46dea-941a-4a1a-af12-98a410a79544",
+        "team1_name":"Arsenal",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Feverton.png?alt=media&token=51e369f2-8057-46fa-ac6c-a3444348529c",
+        "team2_name":"Everton"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 200,
+        "date": "FRIDAY 22 DECEMBER",
+        "on_air":"21:00",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fchelsea.png?alt=media&token=6f06568f-cd12-4355-9271-71afecedded8",
+        "team1_name":"Chelsea",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmc.png?alt=media&token=ecd2bead-1130-4d36-bdee-22591ac4ebe6",
+        "team2_name":"Man City"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 100,
+        "date": "FRIDAY 22 DECEMBER",
+        "on_air":"18:00",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fliverpool.png?alt=media&token=3ff90420-c2d9-43ce-ad0f-73c55d6edada",
+        "team1_name":"Liverpool",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmu.png?alt=media&token=06ac1667-2cb1-40e7-a3df-ad41ae11623e",
+        "team2_name":"Man Utd"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 100,
+        "date": "MONDAY 25 DECEMBER",
+        "on_air":"13:45",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fwatford.png?alt=media&token=d919dd06-ae99-4128-b82b-5056d70e9440",
+        "team1_name":"Watford",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Farsenal.png?alt=media&token=2da46dea-941a-4a1a-af12-98a410a79544",
+        "team2_name":"Arsenal"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 0,
+        "date": "MONDAY 25 DECEMBER",
+        "on_air":"19:30",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fchelsea.png?alt=media&token=6f06568f-cd12-4355-9271-71afecedded8",
+        "team1_name":"Chelsea",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmu.png?alt=media&token=06ac1667-2cb1-40e7-a3df-ad41ae11623e",
+        "team2_name":"Man Utd"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 200,
+        "date": "THURSDAY 28 DECEMBER",
+        "on_air":"15:00",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fmu.png?alt=media&token=06ac1667-2cb1-40e7-a3df-ad41ae11623e",
+        "team1_name":"Man Utd",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Feverton.png?alt=media&token=51e369f2-8057-46fa-ac6c-a3444348529c",
+        "team2_name":"Everton"
+      },
+      {
+        "league_image": "https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/england.png?alt=media&token=463171ae-cced-4dc7-905f-6d7edeb528c2",
+        "league_name":"PREMIER LEAGUE",
+        "coins": 200,
+        "date": "THURSDAY 28 DECEMBER",
+        "on_air":"20:30",
+        "result":"",
+        "team1_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Farsenal.png?alt=media&token=2da46dea-941a-4a1a-af12-98a410a79544",
+        "team1_name":"Arsenal",
+        "team2_img":"https://firebasestorage.googleapis.com/v0/b/new-news-b750a.appspot.com/o/teams%2Fengland%2Fchelsea.png?alt=media&token=6f06568f-cd12-4355-9271-71afecedded8",
+        "team2_name":"Chelsea"
+      }
+    ]
+  }
+}
