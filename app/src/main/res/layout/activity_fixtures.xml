@@ -15,29 +15,21 @@
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:toolbarId="@+id/toolbar">
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/leaguesRecyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/leagues_recycler_bg" />
-
-        </android.support.design.widget.CollapsingToolbarLayout>
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="pin"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/leaguesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/leagues_recycler_bg"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
 
     </android.support.design.widget.AppBarLayout>
 
